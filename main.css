@@ -1,5 +1,6 @@
-h1 { 
-	color: #36C;
-	font-size: 500%;
-	text-transform: lowercase; 
+body {
+	background-image: url("https://wallpapercave.com/wp/ej6FSI7.jpg");
+}
+p { 
+	background-color: green;
 }
