@@ -1,6 +1,12 @@
 body {
 	background-image: url("https://wallpapercave.com/wp/ej6FSI7.jpg");
+	background-size: contain;
+	background-repeat: repeat;
 }
+a:link {color: yellow;}
+a:visited {color: lightblue;}
+a:hover {color: #FFCC00;}
+a:active {color: #FF00CC;}
 p { 
 	background-color: green;
 }
