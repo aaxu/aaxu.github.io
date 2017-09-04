@@ -1,7 +1,10 @@
-var slideIndex = 1;
+var slideIndex = -1;
 var waitTime = 0;
 var slides = document.getElementsByClassName("mySlides");
 var timer = null;
+
+// Time it takes for the slideshow to move onto the next image.
+var slideShowDelay = 5000;
 showDivs(slideIndex);
 
 function initImages() {
@@ -12,20 +15,23 @@ function initImages() {
 }
 
 function plusDivs(n) {
-    showDivs(slideIndex += n);
+    slideIndex += n;
+    slideIndex %= slides.length;
+    if (slideIndex == -1) {
+    	slideIndex += slides.length;
+    }
+    showDivs(slideIndex);
 }
 
 function showDivs(n) {
     var i;
-    if (n > slides.length) {slideIndex = 1} 
-    if (n < 1) {slideIndex = slides.length} ;
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none"; 
     }
-    slides[slideIndex-1].style.display = "block";
+    slides[slideIndex].style.display = "block";
     if (timer != null) {
     	clearTimeout(timer);
-    	timer = setTimeout(carousel, 2000)
+    	timer = setTimeout(carousel, slideShowDelay);
     }
 }
 
@@ -34,8 +40,8 @@ function carousel() {
     for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none"; 
     }
-    slides[slideIndex-1].style.display = "block"; 
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1} 
-    timer = setTimeout(carousel, 2000); // Change image every 2 seconds
+    slideIndex += 1;
+    slideIndex %= slides.length;
+    slides[slideIndex].style.display = "block";
+    timer = setTimeout(carousel, slideShowDelay);
 }
