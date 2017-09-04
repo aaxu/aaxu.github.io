@@ -2,107 +2,109 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="main.css"/>
-<link rel="shortcut icon" href="images/icon.ico">
-<link rel="stylesheet", type="text/css" href="aos.css">
-<script type="text/javascript" src="aos.js"></script>
+<script type="text/javascript" src="slideshow.js"></script>
+<link rel="shortcut icon" href="icon.ico">
 <title>Hello, world!</title>
 </head>
 <body>
-<div id="nav">
-     <ul>
-         <li><a href="#test1">test1</a></li>
-         <li><a href="#test2">test2</a></li>
-         <li><a href="#test3">test3</a></li>
-     </ul>
+<div id="navSlideShow">
+	<!-- Create images -->
+    <img class="mySlides" src="images/alpaca.png">
+	<img class="mySlides" src="images/maplestory.png">
+	<img class="mySlides" src="images/donger.png">
+	<!-- Show only the first image -->
+	<script type="text/javascript">initImages();</script>
+
+	<!-- Slide show -->
+	<div class="w3-center w3-display-bottommiddle" style="width:100%">
+		<!-- Buttons to change picture -->
+	    <div class="w3-left" onclick="plusDivs(-1)">&#10094;</div>
+	    <div class="w3-right" onclick="plusDivs(1)">&#10095;</div>
+	    <span class="w3-badge demo w3-border" onclick="currentDiv(1)"></span>
+	    <span class="w3-badge demo w3-border" onclick="currentDiv(2)"></span>
+	    <span class="w3-badge demo w3-border" onclick="currentDiv(3)"></span>
+  	</div>
 </div>
 
-<h1>Most <font size="3" color="blue">important</font> heading!</h1>
-<p>First paragraph with the <br> &ltp&gt tag </p>
-<p>Second paragraph</p>
-<a href="http://github.com/aaxu", target="_blank">Visit my GitHub!</a>
-<p> Things stated are the following: </p>
-<ul id="test1">
-<li>ci_edit</li>
-	<ul>
-		<li>Customizable text editor on the command line!</li>
-	</ul>
-<li>socli</li>
-	<ul>
-		<li style="color:rgb(153, 255, 153);">Command line interface to browse Stack Overflow!</li> 
-	</ul>
-</ul>
-<ul id="test2">
-<li>ci_edit</li>
-	<ul>
-		<li>Customizable text editor on the command line!</li>
-	</ul>
-<li>socli</li>
-	<ul>
-		<li style="color:rgb(153, 255, 153);">Command line interface to browse Stack Overflow!</li> 
-	</ul>
-</ul>
-<ul>
-<li>ci_edit</li>
-	<ul>
-		<li>Customizable text editor on the command line!</li>
-	</ul>
-<li>socli</li>
-	<ul>
-		<li style="color:rgb(153, 255, 153);">Command line interface to browse Stack Overflow!</li> 
-	</ul>
-</ul>
-<ul>
-<li>ci_edit</li>
-	<ul>
-		<li>Customizable text editor on the command line!</li>
-	</ul>
-<li>socli</li>
-	<ul>
-		<li style="color:rgb(153, 255, 153);">Command line interface to browse Stack Overflow!</li> 
-	</ul>
-</ul>
-<ul>
-<li>ci_edit</li>
-	<ul>
-		<li>Customizable text editor on the command line!</li>
-	</ul>
-<li>socli</li>
-	<ul>
-		<li style="color:rgb(153, 255, 153);">Command line interface to browse Stack Overflow!</li> 
-	</ul>
-</ul>
-<ul id="test3">
-<li>ci_edit</li>
-	<ul>
-		<li>Customizable text editor on the command line!</li>
-	</ul>
-<li>socli</li>
-	<ul>
-		<li style="color:rgb(153, 255, 153);">Command line interface to browse Stack Overflow!</li> 
-	</ul>
-</ul>
-<ul>
-<li>ci_edit</li>
-	<ul>
-		<li>Customizable text editor on the command line!</li>
-	</ul>
-<li>socli</li>
-	<ul>
-		<li style="color:rgb(153, 255, 153);">Command line interface to browse Stack Overflow!</li> 
-	</ul>
-</ul>
+</div>
 
-<ul>
-<li>ci_edit</li>
-	<ul>
-		<li>Customizable text editor on the command line!</li>
+<div id="page1">
+	<h1>Most <font size="3" color="blue">important</font> heading!</h1>
+	<p>First paragraph with the <br> &ltp&gt tag </p>
+	<p>Second paragraph</p>
+	<a href="http://github.com/aaxu", target="_blank">Visit my GitHub!</a>
+	<p> Things stated are the following: </p>
+	<ul id="test1">
+	<li>ci_edit</li>
+		<ul>
+			<li>Customizable text editor on the command line!</li>
+		</ul>
+	<li>socli</li>
+		<ul>
+			<li style="color:rgb(153, 255, 153);">Command line interface to browse Stack Overflow!</li> 
+		</ul>
 	</ul>
-<div class="testing" data-aos="zoom-in">Hi there </div>
-<li>socli</li>
-	<ul>
-		<li style="color:rgb(153, 255, 153);">Command line interface to browse Stack Overflow!</li> 
+	<ul id="test2">
+	<li>ci_edit</li>
+		<ul>
+			<li>Customizable text editor on the command line!</li>
+		</ul>
+	<li>socli</li>
+		<ul>
+			<li style="color:rgb(153, 255, 153);">Command line interface to browse Stack Overflow!</li> 
+		</ul>
 	</ul>
-</ul>
+	<ul>
+	<li>ci_edit</li>
+		<ul>
+			<li>Customizable text editor on the command line!</li>
+		</ul>
+	<li>socli</li>
+		<ul>
+			<li style="color:rgb(153, 255, 153);">Command line interface to browse Stack Overflow!</li> 
+		</ul>
+	</ul>
+	<ul>
+	<li>ci_edit</li>
+		<ul>
+			<li>Customizable text editor on the command line!</li>
+		</ul>
+	<li>socli</li>
+		<ul>
+			<li style="color:rgb(153, 255, 153);">Command line interface to browse Stack Overflow!</li> 
+		</ul>
+	</ul>
+	<ul>
+	<li>ci_edit</li>
+		<ul>
+			<li>Customizable text editor on the command line!</li>
+		</ul>
+	<li>socli</li>
+		<ul>
+			<li style="color:rgb(153, 255, 153);">Command line interface to browse Stack Overflow!</li> 
+		</ul>
+	</ul>
+	<ul id="test3">
+	<li>ci_edit</li>
+		<ul>
+			<li>Customizable text editor on the command line!</li>
+		</ul>
+	<li>socli</li>
+		<ul>
+			<li style="color:rgb(153, 255, 153);">Command line interface to browse Stack Overflow!</li> 
+		</ul>
+	</ul>
+	<ul>
+	<li>ci_edit</li>
+		<ul>
+			<li>Customizable text editor on the command line!</li>
+		</ul>
+	<li>socli</li>
+		<ul>
+			<li style="color:rgb(153, 255, 153);">Command line interface to browse Stack Overflow!</li> 
+		</ul>
+	</ul>
+</div>
 
 <p><br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> </p>
 </body>

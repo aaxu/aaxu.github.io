@@ -1,8 +1,16 @@
-body {
+#page1 {
+	/*background-image: url("./images/cropped-alpaca.png");
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 1400px;
+	width: 100%;*/
+}
+/*body {
 	background-image: url("https://wallpapercave.com/wp/ej6FSI7.jpg");
 	background-size: contain;
 	background-repeat: repeat;
-}
+}*/
 a:link {color: yellow;}
 a:visited {color: lightblue;}
 a:hover {color: #FFCC00;}
