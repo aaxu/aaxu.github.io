@@ -1,47 +1,83 @@
-var slideIndex = -1;
-var waitTime = 0;
-var slides = document.getElementsByClassName("mySlides");
+var slideIndex = 0;
+var slides = null;
+var dots = null;
 var timer = null;
-
-// Time it takes for the slideshow to move onto the next image.
 var slideShowDelay = 5000;
-showDivs(slideIndex);
-
-function initImages() {
-	for (i = 1; i < slides.length; i++) {
-	        slides[i].style.display = "none"; 
-	}
-	carousel();
-}
 
 function plusDivs(n) {
-    slideIndex += n;
-    slideIndex %= slides.length;
-    if (slideIndex == -1) {
-    	slideIndex += slides.length;
-    }
-    showDivs(slideIndex);
+  slideIndex += n;
+  slideIndex %= slides.length;
+  if (slideIndex == -1) {
+  	slideIndex += slides.length;
+  }
+  showDivs(slideIndex);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function initImages() {
+  slides = document.getElementsByClassName("mySlides");
+  dots = document.getElementsByClassName("demo");
+	for (i = 1; i < slides.length; i++) {
+	    slides[i].style.display = "none"; 
+	}
+	currentDiv(0);
+	// timer = setTimeout(carousel, slideShowDelay);
 }
 
 function showDivs(n) {
-    var i;
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none"; 
-    }
-    slides[slideIndex].style.display = "block";
-    if (timer != null) {
-    	clearTimeout(timer);
-    	timer = setTimeout(carousel, slideShowDelay);
-    }
+  var i;
+  for (i = 0; i < slides.length; i++) {
+     slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  slides[slideIndex].style.display = "block";  
+  dots[slideIndex].className += " w3-white";
+  // if (timer) {
+  // 	clearTimeout(timer);
+  // 	timer = setTimeout(plusDivs(1), slideShowDelay);
+  // }
 }
 
 function carousel() {
-    var i;
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none"; 
-    }
-    slideIndex += 1;
-    slideIndex %= slides.length;
-    slides[slideIndex].style.display = "block";
-    timer = setTimeout(carousel, slideShowDelay);
+	plusDivs(1);
+  timer = setTimeout(carousel, slideShowDelay);
 }
+
+// var slideIndex = -1;
+// var waitTime = 0;
+// var slides = document.getElementsByClassName("mySlides");
+// var timer = null;
+
+// // Time it takes for the slideshow to move onto the next image.
+// var slideShowDelay = 5000;
+// showDivs(slideIndex);
+
+
+// function plusDivs(n) {
+//     slideIndex += n;
+//     slideIndex %= slides.length;
+//     if (slideIndex == -1) {
+//     	slideIndex += slides.length;
+//     }
+//     showDivs(slideIndex);
+// }
+
+// function showDivs(n) {
+//     var i;
+//     for (i = 0; i < slides.length; i++) {
+//         slides[i].style.display = "none"; 
+//     }
+//     var currentSlide = slides[Math.max(0, slideIndex)];
+//     if (currentSlide) {
+//     	currentSlide.style.display = "block";
+//     }
+//     if (timer != null) {
+//     	clearTimeout(timer);
+//     	timer = setTimeout(carousel, slideShowDelay);
+//     }
+// }
