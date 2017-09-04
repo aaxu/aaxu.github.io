@@ -9,4 +9,12 @@ a:hover {color: #FFCC00;}
 a:active {color: #FF00CC;}
 p { 
 	background-color: green;
+	border: 1px;
+	border-radius: 25px;
+	border-style: solid;
+	border-color: #0099CC;
+}
+
+li {
+	color: blue;
 }

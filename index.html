@@ -3,17 +3,35 @@
 <head>
 <link rel="stylesheet" type="text/css" href="main.css"/>
 <link rel="shortcut icon" href="images/icon.ico">
+<link rel="stylesheet", type="text/css" href="aos.css">
+<script type="text/javascript" src="aos.js"></script>
 <title>Hello, world!</title>
 </head>
-
-
 <body>
+<div id="nav">
+     <ul>
+         <li><a href="#test1">test1</a></li>
+         <li><a href="#test2">test2</a></li>
+         <li><a href="#test3">test3</a></li>
+     </ul>
+</div>
+
 <h1>Most <font size="3" color="blue">important</font> heading!</h1>
 <p>First paragraph with the <br> &ltp&gt tag </p>
 <p>Second paragraph</p>
 <a href="http://github.com/aaxu", target="_blank">Visit my GitHub!</a>
 <p> Things stated are the following: </p>
-<ul>
+<ul id="test1">
+<li>ci_edit</li>
+	<ul>
+		<li>Customizable text editor on the command line!</li>
+	</ul>
+<li>socli</li>
+	<ul>
+		<li style="color:rgb(153, 255, 153);">Command line interface to browse Stack Overflow!</li> 
+	</ul>
+</ul>
+<ul id="test2">
 <li>ci_edit</li>
 	<ul>
 		<li>Customizable text editor on the command line!</li>
@@ -53,27 +71,7 @@
 		<li style="color:rgb(153, 255, 153);">Command line interface to browse Stack Overflow!</li> 
 	</ul>
 </ul>
-<ul>
-<li>ci_edit</li>
-	<ul>
-		<li>Customizable text editor on the command line!</li>
-	</ul>
-<li>socli</li>
-	<ul>
-		<li style="color:rgb(153, 255, 153);">Command line interface to browse Stack Overflow!</li> 
-	</ul>
-</ul>
-<ul>
-<li>ci_edit</li>
-	<ul>
-		<li>Customizable text editor on the command line!</li>
-	</ul>
-<li>socli</li>
-	<ul>
-		<li style="color:rgb(153, 255, 153);">Command line interface to browse Stack Overflow!</li> 
-	</ul>
-</ul>
-<ul>
+<ul id="test3">
 <li>ci_edit</li>
 	<ul>
 		<li>Customizable text editor on the command line!</li>
@@ -94,7 +92,21 @@
 	</ul>
 </ul>
 
+<ul>
+<li>ci_edit</li>
+	<ul>
+		<li>Customizable text editor on the command line!</li>
+	</ul>
+<div class="testing" data-aos="zoom-in">Hi there </div>
+<li>socli</li>
+	<ul>
+		<li style="color:rgb(153, 255, 153);">Command line interface to browse Stack Overflow!</li> 
+	</ul>
+</ul>
+
+<p><br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> </p>
 </body>
+
 
 
 </html>
