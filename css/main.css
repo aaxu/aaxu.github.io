@@ -1,0 +1,38 @@
+.mySlides {
+	display: none;
+}
+.w3-left, .w3-right, .w3-badge {
+	cursor: pointer;
+}
+.w3-badge {
+	height:13px;
+	width:13px;
+	padding:0;
+}
+
+#page1 {
+	/*background-image: url("./images/cropped-alpaca.png");
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 1400px;
+	width: 100%;*/
+}
+body {
+	background-color: gray;
+}
+a:link {color: yellow;}
+a:visited {color: lightblue;}
+a:hover {color: #FFCC00;}
+a:active {color: #FF00CC;}
+p { 
+	background-color: green;
+	border: 1px;
+	border-radius: 25px;
+	border-style: solid;
+	border-color: #0099CC;
+}
+
+li {
+	color: blue;
+}
