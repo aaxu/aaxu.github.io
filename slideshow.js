@@ -10,10 +10,33 @@ function plusDivs(n) {
   if (slideIndex == -1) {
   	slideIndex += slides.length;
   }
+  slides[slideIndex].className = 
+      slides[slideIndex].className.replace(" w3-animate-left", "");
+  slides[slideIndex].className = 
+      slides[slideIndex].className.replace(" w3-animate-right", "");
+  if (n > 0) {
+    slides[slideIndex].className += " w3-animate-right";
+  } else if (n < 0) {
+    slides[slideIndex].className += " w3-animate-left";
+  }
   showDivs(slideIndex);
 }
 
 function currentDiv(n) {
+  if (slideIndex == n) {
+    slides[slideIndex].className = 
+        slides[slideIndex].className.replace(" w3-animate-left", "");
+    slides[slideIndex].className = 
+        slides[slideIndex].className.replace(" w3-animate-right", "");
+  } else if (n < slideIndex) {
+    while (n < slideIndex) {
+      plusDivs(-1);
+    } 
+  } else if (n > slideIndex) {
+    while (n > slideIndex) {
+      plusDivs(1);
+    }
+  }
   showDivs(slideIndex = n);
 }
 
