@@ -50,36 +50,5 @@ function restartTimer() {
   }
   timer = setTimeout(carousel, slideShowDelay)
 }
-// var slideIndex = -1;
-// var waitTime = 0;
-// var slides = document.getElementsByClassName("mySlides");
-// var timer = null;
 
-// // Time it takes for the slideshow to move onto the next image.
-// var slideShowDelay = 5000;
-// showDivs(slideIndex);
-
-
-// function plusDivs(n) {
-//     slideIndex += n;
-//     slideIndex %= slides.length;
-//     if (slideIndex == -1) {
-//     	slideIndex += slides.length;
-//     }
-//     showDivs(slideIndex);
-// }
-
-// function showDivs(n) {
-//     var i;
-//     for (i = 0; i < slides.length; i++) {
-//         slides[i].style.display = "none"; 
-//     }
-//     var currentSlide = slides[Math.max(0, slideIndex)];
-//     if (currentSlide) {
-//     	currentSlide.style.display = "block";
-//     }
-//     if (timer != null) {
-//     	clearTimeout(timer);
-//     	timer = setTimeout(carousel, slideShowDelay);
-//     }
-// }
+function scrollToHash(hashName) { location.hash = "#" + hashName; }
