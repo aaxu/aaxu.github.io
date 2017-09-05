@@ -24,10 +24,7 @@ function plusDivs(n) {
 
 function currentDiv(n) {
   if (slideIndex == n) {
-    slides[slideIndex].className = 
-        slides[slideIndex].className.replace(" w3-animate-left", "");
-    slides[slideIndex].className = 
-        slides[slideIndex].className.replace(" w3-animate-right", "");
+    plusDivs(0);
   } else if (n < slideIndex) {
     while (n < slideIndex) {
       plusDivs(-1);
@@ -37,7 +34,6 @@ function currentDiv(n) {
       plusDivs(1);
     }
   }
-  showDivs(slideIndex = n);
 }
 
 function initImages() {
