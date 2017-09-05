@@ -1,7 +1,7 @@
 var slideIndex = 0;
-var slides = null;
-var dots = null;
-var timer = null;
+var slides;
+var dots;
+var timer;
 var slideShowDelay = 5000;
 
 function plusDivs(n) {
@@ -24,7 +24,6 @@ function initImages() {
 	    slides[i].style.display = "none"; 
 	}
 	currentDiv(0);
-	// timer = setTimeout(carousel, slideShowDelay);
 }
 
 function showDivs(n) {
@@ -37,17 +36,20 @@ function showDivs(n) {
   }
   slides[slideIndex].style.display = "block";  
   dots[slideIndex].className += " w3-white";
-  // if (timer) {
-  // 	clearTimeout(timer);
-  // 	timer = setTimeout(plusDivs(1), slideShowDelay);
-  // }
+  restartTimer();
 }
 
 function carousel() {
 	plusDivs(1);
-  timer = setTimeout(carousel, slideShowDelay);
+  restartTimer();
 }
 
+function restartTimer() {
+  if (timer) {
+    clearTimeout(timer);
+  }
+  timer = setTimeout(carousel, slideShowDelay)
+}
 // var slideIndex = -1;
 // var waitTime = 0;
 // var slides = document.getElementsByClassName("mySlides");
