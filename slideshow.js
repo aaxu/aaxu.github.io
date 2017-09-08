@@ -69,5 +69,3 @@ function restartTimer() {
   }
   timer = setTimeout(carousel, slideShowDelay)
 }
-
-function scrollToHash(hashName) { location.hash = "#" + hashName; }
