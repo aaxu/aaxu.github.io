@@ -17,16 +17,20 @@ p {
 	color: #cdcdcd;
 }
 
-.jumbotron {
+#myCarousel {
+  margin-bottom: 50px;
+}
+/*.jumbotron {
 	background: #27A967;
 	color: white;
 	text-align: center;
+  margin-bottom: 1000px;
 }
 
 .jumbotron p {
 	color: white;
 	font-size: 26px;
-}
+}*/
 
 .btn-primary {
 	color: #fff;
@@ -67,10 +71,10 @@ p {
 }
 
 /*Styling for mobile*/
-.call-to-action {
+.myGrid {
 	text-align: center;
 }
-.call-to-action p {
+.myGrid p {
 	margin-bottom: 30px;
 	font-family: sans-serif;
 }
