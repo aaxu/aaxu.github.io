@@ -16,13 +16,6 @@ body {
   padding-top: 50px; /*Fix content overlap*/
 }
 
-/*Fix padding for mobile*/
-@media (max-width: 979px) {
-  body {
-    padding-top: 50px;
-  }
-}
-
 h1, h2 {
 	font-weight: bold;
 }
