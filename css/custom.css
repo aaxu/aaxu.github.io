@@ -13,7 +13,6 @@ body {
 	background: #3E4649;
 	color: #f7f7f7;
 	font-family: 'Montserrat', sans-serif;
-  padding-top: 50px; /*Fix content overlap*/
 }
 
 h1, h2 {
@@ -26,6 +25,7 @@ p {
 }
 
 #myCarousel {
+  padding-top:50px;
   margin-bottom: 50px;
 }
 /*.jumbotron {
