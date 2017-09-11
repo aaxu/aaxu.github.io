@@ -31,8 +31,10 @@ p {
   margin-bottom: 50px;
 }
 
-.carousel-inner img {
-  height: center;
+.carousel-inner > .item > img {
+  max-height: 100%;
+  margin: auto;
+  width: auto;
 }
 /*.jumbotron {
 	background: #27A967;
